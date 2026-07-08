@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Маргарита Белорукова — Разработчик видеоигр</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #1a1a1a;
+        --accent: #2563eb;
+        --border: #e5e7eb;
+        --section-bg: #f9fafb;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      .resume-container {
+        max-width: 840px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        border-radius: 12px;
+        overflow: hidden;
+        padding-bottom: 40px;
+      }
+      header {
+        padding: 32px 24px;
+        border-bottom: 1px solid var(--border);
+        background: var(--section-bg);
+      }
+      h1 {
+        margin: 0 0 6px 0;
+        font-size: 26px;
+        color: var(--text);
+      }
+      .subtitle {
+        margin: 0 0 16px 0;
+        font-weight: 500;
+        color: #4b5563;
+      }
+      .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 14px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #374151;
+      }
+      .contact-link {
+        color: var(--accent);
+        text-decoration: none;
+        word-break: break-all;
+      }
+      .contact-link:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 24px 24px;
+      }
+      section + section {
+        border-top: 1px solid var(--border);
+      }
+      h2 {
+        margin: 0 0 16px 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #1e293b;
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 10px;
+      }
+      .skill-tag {
+        background: var(--section-bg);
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 13px;
+        color: #334155;
+      }
+
+      .job-block {
+        margin-bottom: 28px;
+      }
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 6px;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .job-title {
+        font-weight: 700;
+        font-size: 17px;
+        color: #0f172a;
+      }
+      .job-company {
+        font-weight: 600;
+        color: #334155;
+      }
+      .job-dates {
+        color: #64748b;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+      .job-project {
+        font-style: italic;
+        color: #475569;
+        margin-bottom: 8px;
+        display: block;
+      }
+      .engine-tag {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #555;
+        margin-left: 6px;
+      }
+      .job-list {
+        margin: 0;
+        padding-left: 0;
+      }
+      .job-list li {
+        list-style: none;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 6px;
+      }
+      .job-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
+
+      footer {
+        padding: 20px 24px;
+        color: #64748b;
+        font-size: 13px;
+        text-align: center;
+        border-top: 1px solid var(--border);
+      }
+
+      @media (max-width: 640px) {
+        .job-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .job-dates {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <header>
+        <h1>Маргарита Белорукова</h1>
+        <p class="subtitle">Разработчик видеоигр</p>
+        <div class="contacts">
+          <div class="contact-item">📍 Москва (удалёнка / гибрид)</div>
+          <div class="contact-item">📞 +7 (926) 308-52-04</div>
+          <div class="contact-item">✉️ margobelorukova@gmail.com</div>
+          <div class="contact-item"><a class="contact-link" href="https://github.com/Shahdee" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+          <div class="contact-item"><a class="contact-link" href="https://shahdee.itch.io" target="_blank" rel="noopener noreferrer">Itch.io</a></div>
+          <div class="contact-item"><a class="contact-link" href="https://dribbble.com/Shahdee" target="_blank" rel="noopener noreferrer">Dribbble</a></div>
+        </div>
+      </header>
+
+      <section>
+        <h2>О себе</h2>
+        <p>
+          Разработчик с опытом в business development и управлении продуктом. Сочетаю техническую экспертизу (C#, Lua, Unity, Defold) с умением выстраивать партнёрства и выступать публично. Работала над мобильными и кроссплатформенными играми (MOBA, RPG, match‑3, hyper‑casual, F2P) во многих ролях: разработка, арт, геймдизайн, маркетинг. Участвовала в бизнес‑акселераторах (Y Combinator, Startup Chile, K‑Startup, Flat6Labs, F2P Campus). На данный момент хочу перейти из разработки проектов в менеджмент команд.
+        </p>
+      </section>
+
+      <section>
+        <h2>Ключевые навыки</h2>
+        <div class="skills-grid">
+          <span class="skill-tag">Defold</span>
+          <span class="skill-tag">Unity</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">Lua</span>
+          <span class="skill-tag">Вёрстка UI</span>
+          <span class="skill-tag">Игровая логика</span>
+          <span class="skill-tag">Мета‑ и кор‑системы</span>
+          <span class="skill-tag">Оптимизация билда</span>
+          <span class="skill-tag">Геймдизайн</span>
+          <span class="skill-tag">Прототипирование</span>
+          <span class="skill-tag">Плейтесты</span>
+          <span class="skill-tag">Business Development</span>
+          <span class="skill-tag">SMM</span>
+          <span class="skill-tag">Affinity Designer</span>
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Английский (свободный)</span>
+          <span class="skill-tag">Испанский</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Опыт работы</h2>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Разработчик</div>
+              <div class="job-company">Manin Game</div>
+            </div>
+            <div class="job-dates">сентябрь 2024 — февраль 2025</div>
+          </div>
+          <span class="job-project">Проект: Animal Hero <span class="engine-tag">Defold</span></span>
+          <ul class="job-list">
+            <li>Верстала игровые интерфейсы.</li>
+            <li>Программировала интерфейсы, клиентскую логику и анимации.</li>
+            <li>Добавляла ассеты в игру.</li>
+            <li>Документировала ТУ и ТЗ для арт‑отдела.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Unity Developer</div>
+              <div class="job-company">Red Machine Games</div>
+            </div>
+            <div class="job-dates">2023</div>
+          </div>
+          <span class="job-project">Проект: Doorman Story <span class="engine-tag">Unity</span></span>
+          <ul class="job-list">
+            <li>Оптимизация Android‑билда.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Defold Developer / Геймдизайнер / Арт</div>
+              <div class="job-company">RM2 Games</div>
+            </div>
+            <div class="job-dates">июнь 2023 — июнь 2024</div>
+          </div>
+          <span class="job-project">Проект: Alchemy <span class="engine-tag">Defold</span></span>
+          <ul class="job-list">
+            <li>Прототипирование концепта игры, геймдизайн, проведение плейтестов.</li>
+            <li>Отрисовка всех визуальных элементов игры.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Unity Developer</div>
+              <div class="job-company">Xaloc Studios</div>
+            </div>
+            <div class="job-dates">март 2022 — сентябрь 2022</div>
+          </div>
+          <span class="job-project">Проект: Rainbow High <span class="engine-tag">Unity</span></span>
+          <ul class="job-list">
+            <li>Верстала и программировала интерфейсы.</li>
+            <li>Программировала мини‑игры.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Business Development / SMM</div>
+              <div class="job-company">Luden.io</div>
+            </div>
+            <div class="job-dates">июль 2021 — октябрь 2021</div>
+          </div>
+          <span class="job-project">Проект: Learning Factory EDU</span>
+          <ul class="job-list">
+            <li>Проводила интервью с американскими коллегами.</li>
+            <li>Участвовала в подкасте и выступала на конференциях.</li>
+            <li>Вела SMM‑активности.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Unity Developer</div>
+              <div class="job-company">SWG‑gameslab</div>
+            </div>
+            <div class="job-dates">март 2020 — ноябрь 2020</div>
+          </div>
+          <span class="job-project">Проект: Cooking Paradise (match‑3 + city builder) <span class="engine-tag">Unity</span></span>
+          <ul class="job-list">
+            <li>Программировала мета‑ и кор‑механики и анимации.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Co‑founder / Разработчик / Арт / Маркетинг</div>
+              <div class="job-company">Unnyhog</div>
+            </div>
+            <div class="job-dates">февраль 2014 — сентябрь 2019</div>
+          </div>
+          <span class="job-project">Проекты: UnnyWorld (3D MOBA), Hero Masters (3D RPG), Circular Mind (2D hyper‑casual) <span class="engine-tag">Unity, PIXI.js</span></span>
+          <ul class="job-list">
+            <li>Разработка: вёрстка интерфейсов и программирование клиентской логики.</li>
+            <li>Арт: отрисовка интерфейсов для Circular Mind, создание маркетинговых материалов.</li>
+            <li>Маркетинг: ведение соцсетей проектов, участие в подкастах, презентации на конференциях, поиск инвестиций.</li>
+          </ul>
+        </div>
+
+        <div class="job-block">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Unity Developer</div>
+              <div class="job-company">Game Insight</div>
+            </div>
+            <div class="job-dates">февраль 2013 — февраль 2014</div>
+          </div>
+          <span class="job-project">Проект: Sunshine Bay (2D симулятор тропического острова) <span class="engine-tag">Unity</span></span>
+          <ul class="job-list">
+            <li>Вёрстка интерфейсов и программирование клиентской логики.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Образование</h2>
+        <p>
+          Инженер‑математик, специальность «Прикладная математика»<br />
+          Национальный исследовательский ядерный университет «МИФИ», Москва — 2006–2012
+        </p>
+      </section>
+
+      <footer>
+        Резюме Маргариты Белоруковой — актуально на 2025 год.
+      </footer>
+    </div>
+  </body>
+</html>
